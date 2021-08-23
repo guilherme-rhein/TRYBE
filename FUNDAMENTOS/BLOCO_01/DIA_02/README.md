@@ -7,7 +7,7 @@ Os principais pontos abordados serão:
 - Arquivos e processos, o que são
 - Qual sua estrutura de diretórios
 - O que é o terminal
-- Comandos executados no Shell.
+- Comandos executados no Shell
 
 
 Exemplos:	
@@ -15,4 +15,4 @@ Exemplos:
 - Navegação pelo Terminal e Comandos
 - Permissões e Processos
 - Inputs e Outputs
--  > (maior), >> (maior maior) e | (pipe) 
+- Maior (>), Maior Maior (>>) e Pipe (|)
