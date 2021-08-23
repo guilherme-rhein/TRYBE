@@ -15,4 +15,8 @@ Exemplos:
 - Navegação pelo Terminal e Comandos
 - Permissões e Processos
 - Inputs e Outputs
+<<<<<<< HEAD
 - Maior (>), Maior Maior (>>) e Pipe (|)
+=======
+- Maior (>), Maior Maior (>>) e Pipe (|) 
+>>>>>>> 93220b241ff11828d2c8e0c41559b2d217ba0114
