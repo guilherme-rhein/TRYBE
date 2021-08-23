@@ -15,4 +15,4 @@ Exemplos:
 - Navegação pelo Terminal e Comandos
 - Permissões e Processos
 - Inputs e Outputs
--  > (maior), >> (maior maior) e | (pipe) 
+- Maior (>), Maior Maior (>>) e Pipe (|) 
