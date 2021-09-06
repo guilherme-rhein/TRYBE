@@ -1,0 +1,372 @@
+LET -- CONSEGUIMOS RECOLOCAR NOVOS VALORES
+CONST -- NAO PERMITE 
+let age = 20; 
+console.log(age);
+20 //
+  age = 30;
+  console.log(age)   -- consegue reatribuir o valor
+  30//
+-------------------------------------------
+Tipagem dinamica nos tipos primitivos:
+let movie = "avengers";  //string literal
+let score = 10; //number literal
+let isValid = true;  //boolean
+let name;  //undefined
+let color = null;  //redefinição de valor
+
+let salary = 3500;
+console.log(salary+salary);
+
+sinais usados 
++ , -, *, /, 3 ** 3(3³);
+
+let salary = 3500;
+salary ++; = 3501
+salary --; = 3499
+------------------------------------------------
+operadores de atribuição e operadores lógicos:
+
+if -se / else - senão/ && - e /
+
+if(condição) {        
+ //vai executar um codigo x
+}
+else if (outra condição) {
+ //executar essa outra condição
+}
+else{
+ //condição
+}
+	
+	let trybe = 14;
+
+	if(trybe >= 14 && trybe < 14.40){
+	console.log("esquenta");
+	}
+	else if (trybe >= 16,30 && trybe < 17,50){
+	console.log("aula ao vivo");
+	}
+	else if (trybe >= 19,40 && trybe < 20) {
+	console.log("fechamento");
+	}
+	else{
+	console.log("fora do momento sincrono")
+	}
+--------------------------------------------------------------------	
+booleanos podem ser "true" ou "false"
+operadores lógicos: 
+&& AND é binario(precisa de 2 elementos) (F/T=F)
+|| OR (F/T=T)
+ ! NOT
+-----------------------------------------------------------------------------------------------------------------------------
+AULA AO VIVO:
+- onde colocar .js? Pode ser colocado no html tanto no BODY, como no HEAD.
+- HEAD precisa de artificios para abrir ja carregado.
+
+Como colocar na pagina HTML?
+<script>src<script>...
+
+1 == 1 , 1 =='1' -- numero 1 e igual a 1 mesmo sendo string, analisa conteudo apenas
+
+1 === '1' --- sao diferentes, pq ele analisa estritamente se é igual
+----------------------------------------
+
+PARA SABER SE É PAR OU IMPAR 
+ LET IsEven = (4 % 2) === 0;
+ console.log(isEven);
+ 
+ LET IsEven = (num1 + num2) % 2) === 0;
+ console.log(isEven);
+ --------------------------
+ IF E ELSE  -- Ele vai testando para saber qual vai rodar
+ switch case -- usa-se qnd nao se calcula intervalos
+ ---------------------------------
+ switch  -- ele e direto ao ponto
+ 
+ 
+ let weekday = 2
+ 
+ switch (weekday) {
+ case 1:
+ 	console.log('domingos');
+ 	break;
+ case2:
+ 	console.log('segunda');
+ 	break
+ default:      
+ 	console.log('nao existe esse dia ainda')
+ }
+ 
+ ----------------------------------------------------------------------------------------------------------
+ ARRAY e LOOP FOR
+ let pizza1 = "pizza chocolate";
+ let pizza2 = 'pizza de marguerita';  
+
+em array ----  let pizzas = ['chocolate', 'marguerita']
+
+add valores em --- pizzas[3] = "mussarela";
+	['chocolate', 'marguerita','mussarela]
+chocolate é 1
+marg 2
+mussa 3
+
+caso add em um numero existente ele substitui. por isso usamos:
+
+pizzas.push('calabresa')  -- add sabores
+
+console.log(pizzas.length);
+
+console.log(pizzas.sort()); -- ordem 
+
+console.log(pizzas[1]); -- segundo conteudo, 1 - 0
+
+for (let index = 0; index < pizzas.length; index +=1) {
+console.log(pizzas[index]);
+}
+
+-------------------------------------------------------------------
+let tasksList = ['Tomar café', 'Reunião', 'Brincar com o cachorro'];
+
+let searchForFirstTask = tasksList[0];
+console.log(searchForFirstTask);
+// Tomar café
+
+let searchForLastTask = tasksList[tasksList.length - 1];
+console.log(searchForLastTask);
+// Brincar com o cachorro
+
+----------------------------------------------------------------------
+let tasksList = ['Tomar café', 'Reunião', 'Brincar com o cachorro'];
+
+tasksList.push('Fazer exercícios da Trybe');  // adiciona mais uma tarefa
+console.log(tasksList);
+
+// ['Tomar café', 'Reunião', 'Brincar com o cachorro', 'Fazer exercícios da Trybe']
+
+----------------------------------------------------------------------
+let tasksList = ['Tomar café', 'Reunião', 'Brincar com o cachorro'];
+
+tasksList.pop();  // remove a última tarefa
+console.log(tasksList);
+
+// [ 'Tomar café', 'Reunião' ]
+
+ .pop() nos permite remover o último item do array. Agora, se precisarmos remover o primeiro item da lista, podemos usar o .shift() 
+-------------------------------------------------------------------------
+indexOf() , usado para procurar o índice de um item no Array 
+
+let tasksList = ['Tomar café', 'Reunião', 'Brincar com o cachorro'];
+
+let indexOfTask = tasksList.indexOf('Reunião');
+console.log(indexOfTask);
+
+// 1
+
+-----------------------------------------------------------------------
+USO DE FOR
+console.log(numero * 1)
+console.log(numero * 2)
+console.log(numero * 3)
+
+var numero = 7;
+for(var contador = 1;contador<= 9;contador += 1){
+console.log("*")
+console.log(numero * contador);   
+}
+
+contador 1 --quero repetir mesmo comando iniciando pelo numero 1
+
+contador 9 -- quero cod repita até chegar no 9, por isso <=
+
+contador ++ (substitui para evitar bug += 1)--Pq quero que na primiera repetição tenha valor de 1, na segunda valor de 2 e assim sucessivamente.
+Ou seja ele vai repetir iniciando do 1 até numero 9 somando 1.
+
+-------------------------------------------------
+var listaNomes = [joana, biel, gui] /0, 1, 2
+for(var ind = 0; ind < listaNomes.length;ind += 1){
+var mensagem = "Boas vindas, " + listaNomes[ind] + "!";
+console.log(mensagem)
+}
+----------------------------------------------------------------------------
+FOR OF
+
+let numeros = [1,2,3,4,5];
+for(let numero of numeros) {
+  console.log(numero);
+}
+
+// resultado: 
+//1
+//2
+//3
+//4
+//5
+
+
+
+let word = 'Hello';
+for (let letter of word) {
+  console.log(letter);
+}
+// resultado:
+// "H"
+// "e"
+// "l"
+// "l"
+// "o"
+
+
+com o for/of , nós conseguimos somar um valor a cada elemento do array e retorná-los da seguinte forma:
+
+let arrOfNumbers = [10, 20, 30];
+for (let sum of arrOfNumbers) {
+  sum += 1;
+  console.log(sum);
+}
+// 11
+// 21
+// 31
+
+
+--------------------------------------------------------------------------------------------------
+OBJETOS
+let name = 'ozzy';
+let lastName = 'osbourne';
+let nickName = 'king of darkness';
+let age = 72;
+let bestMusics = ['crazy train', 'bark at the moon', 'changes', 'miracleman'];
+
+CONSEGUIMOS COLOCAR TUDO EM UMA MESMA PROPRIEDADE 'SINGER'
+
+let singer = {
+name:'ozzy';
+lastName:'osbourne';
+nickName: 'king of darkness';
+age: 72;
+bestMusics: ['crazy train', 'bark at the moon', 'changes', 'miracleman'];
+};
+
+----------------------------------------------
+
+PODEMOS ACESSAR DE VARIAS FORMAS "singer":
+
+console.log('o cantor ' + singer.name + " " + singer.lastName)
+console.log('o cantor ' + singer['name'] + " " + singer['lastName']);
+--------------------------------------------------
+CRIANDO UMA NOVA PROPRIEDADE, PELA PROPRIEDADE ANTERIOR
+
+singer['fullName'] = ['ozzy']
+singer.XXX = ['azul']
+
+singer['fullName'] = singer.name + " " + singer.lastName;
+
+console.table(singer);
+-----------------------------------------------
+PROPRIEDADES DENTRO DE PROPRIEDADES DENTRO DE PRORPRIEDADES:
+let singer = {
+name:'ozzy';
+lastName:'osbourne';
+nickName: 'king of darkness';
+age: 72;
+bestMusics: ['crazy train', 'bark at the moon', 'changes', 'miracleman'];
+infos: {
+drugs: 'all'
+shows: 'dope'
+}
+};
+
+console.log('ozzy way ' + singer.info.shows);
+---------------------------------------------------
+ESCRITA DAS STRINGS:
+
+nameOfTheKing = x
+'name-of-the-king' = y
+
+ nameOfTheKing  -- camelcase, reconhece como 1 palavra só
+'name-of-the-king' -- não reconhece como apenas 1 palavras e sim como 4
+
+EXEMPLO:
+let singer = {
+'name-of-the-king': "ozzy"
+name:'ozzy';
+};
+
+console.log('O ' + singer['name-of-the-king'])  -- nao se usa SINGER. -- USA-SE SINGER[]
+-----------------------------------------------------------------------------------------------------------------------------
+     FOR     IN
+  
+let pizzas = {
+sabor: "palmito"
+preco: 50.00	
+bordaCheddar: true
+};     
+   
+for (let key in pizzas) {
+	console.log(key)
+} // cada propriedade
+
+for (let key in pizzas) {
+	console.log(pizzas[key])
+} // cada valor 
+
+for (let key in pizzas) {
+	console.log(pizzas)
+} //3x toda propriedade e valor em linha
+
+for (let key in pizzas) {
+	console.log(pizzas.preco)
+} // 3x preço da pizza
+
+----------------------------------------------------
+	FOR     IN  -- em array
+
+let pizzas = [choco, morango, banana];
+
+for (let key in pizzas) {
+	console.log(key)
+} // cada posiçao
+
+for (let key in pizzas) {
+	console.log(pizzas[key])
+} // cada valor 
+
+for (let key in pizzas) {
+	console.log(key, pizzas[key])
+} // cada valor e cada posição
+
+for (let key in pizzas) {
+	console.log(pizzas)
+} //3x todos os valores em linha
+
+------------------------------------------------------
+FUNÇOES
+
+Temos 1 programa composto por varios blocos  que fazem algo especifico (freio, acelerador, direção) e precisamos fazer todos trabalharem para formar o programa (carro).
+
+function ligarDesligar(parametro1, parametro2) {
+console.log(parametro1)
+console.log(parametro2)
+}
+
+function ligarDesligar(parametro1, parametro2) {
+var resultado = parametro1 + parametro2
+return resultado
+}
+
+function ligarDesligar(parametro1, parametro2) 
+	ligarDesligar(10, 20)
+	
+-------------------------------------
+aula
+
+function xxx (name) {         
+console.log('ola, ' + name);
+}
+xxx('luiz')
+
+function  makegreeting(name) {
+RETURN NAME
+}
+
+LET GREETING = MAKEGREETING('LEANDRO')
+CONSOLE.LOG(GREETING)
